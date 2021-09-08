@@ -2,7 +2,9 @@
   margin-top: 5px;
 }
 .rightContainerColumn h3 {
-  padding: 15px 0;
+  padding: 5px 0;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 .rightContainerColumn__movies {
   display: flex;
@@ -12,20 +14,24 @@
 .rightContainerColumn__movie {
   display: flex;
   align-items: center;
-  margin: 5px 0;
+  margin: 8px 0;
 }
 
 .rightContainerColumn__movie img {
   object-fit: contain;
-  height: 60px;
+  height: 50px;
 }
 
 .rightContainerColumn__movieDescription {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 60px;
+  height: 50px;
   padding-left: 10px;
+}
+.rightContainerColumn__movieSubDescription h4 {
+  font-weight: 400;
+  font-size: 12px;
 }
 .rightContainerColumn__movieSubDescription p {
   font-size: small;
@@ -46,17 +52,20 @@
 }
 
 button {
-  width: 100%;
-  padding: 8px;
+  width: 80%;
+  padding: 6px;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-top: 5px;
   background-color: rgb(224, 24, 24);
   color: white;
-  font-size: 20px;
   transition: 500ms ease-in-out;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  border: 1px solid red;
 }
 button:hover {
-  background-color: rgb(209, 56, 29);
-  color: rgb(247, 229, 247);
+  background-color: inherit;
+  border: 1px solid red;
+  color: white;
 }
