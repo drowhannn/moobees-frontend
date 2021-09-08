@@ -1,5 +1,9 @@
 * {
   margin: 0;
-  background-color: #111;
+  box-sizing: border-box;
+}
+
+.app {
+  background-color: #191a1f;
   color: #fff;
 }

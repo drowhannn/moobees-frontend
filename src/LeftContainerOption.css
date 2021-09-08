@@ -1,0 +1,26 @@
+.leftContainerOption {
+  margin-bottom: 5px;
+  color: gray;
+}
+
+.leftContainerOptionfalse {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  font-size: 16px;
+  color: gray;
+}
+
+.leftContainerOptionfalse:hover {
+  border-right: 5px solid red;
+}
+.leftContainerOptionfalse:hover .MuiSvgIcon-root {
+  color: red;
+}
+.leftContainerOptionfalse:hover p {
+  color: white;
+}
+
+.leftContainerOption__icon {
+  margin-right: 5px;
+}

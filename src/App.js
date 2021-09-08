@@ -1,13 +1,10 @@
 import "./App.css";
-import Body from "./Body";
+import LeftContainer from "./LeftContainer";
 
 function App() {
   return (
     <div className="app">
-      {/* Nav bar */}
-      {/* Body */}
-      <Body />
-      {/* Footer */}
+      <LeftContainer />
     </div>
   );
 }
