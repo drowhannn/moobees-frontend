@@ -1,0 +1,62 @@
+.rightContainerColumn {
+  margin-top: 5px;
+}
+.rightContainerColumn h3 {
+  padding: 15px 0;
+}
+.rightContainerColumn__movies {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightContainerColumn__movie {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.rightContainerColumn__movie img {
+  object-fit: contain;
+  height: 60px;
+}
+
+.rightContainerColumn__movieDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60px;
+  padding-left: 10px;
+}
+.rightContainerColumn__movieSubDescription p {
+  font-size: small;
+  color: gray;
+}
+.rightContainerColumn__movieRatings {
+  display: flex;
+  align-items: center;
+}
+.rightContainerColumn__movieRatings .MuiSvgIcon-root {
+  margin-right: 5px;
+  color: yellow;
+  font-size: 15px;
+}
+
+.rightContainerColumn__movieRatings span {
+  font-size: 13px;
+}
+
+button {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 5px;
+  background-color: rgb(224, 24, 24);
+  color: white;
+  font-size: 20px;
+  transition: 500ms ease-in-out;
+}
+button:hover {
+  background-color: rgb(209, 56, 29);
+  color: rgb(247, 229, 247);
+}
