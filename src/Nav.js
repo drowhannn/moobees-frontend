@@ -6,13 +6,13 @@ function Nav() {
     <div className="nav">
       <ul>
         <li>
-          <a href="#">TV Series</a>
+          <a href="/">TV Series</a>
         </li>
         <li>
-          <a href="#">Movies</a>
+          <a href="/">Movies</a>
         </li>
         <li>
-          <a href="#">Animes</a>
+          <a href="/">Animes</a>
         </li>
       </ul>
     </div>

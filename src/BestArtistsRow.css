@@ -1,0 +1,45 @@
+.row {
+  margin-top: 10px;
+}
+.row__artists {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.row__artist {
+  position: relative;
+}
+
+.row__artist img {
+  height: 220px;
+  width: 170px;
+  border-radius: 20px;
+}
+
+.row__artist__contentDiv {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.row__artist__content {
+  display: grid;
+  place-items: center center;
+  height: 100%;
+  align-content: center;
+  margin-top: 40%;
+  overflow: hidden;
+}
+
+.row__artist__content p {
+  color: gray;
+  font-size: 15px;
+  font-weight: 500;
+}
+.row__artist__content__stars .MuiSvgIcon-root {
+  color: yellow;
+}
