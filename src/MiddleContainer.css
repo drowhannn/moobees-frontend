@@ -1,0 +1,11 @@
+.middleContainer {
+  height: 100vh;
+  width: 60vw;
+  margin: 0 auto;
+  background-color: inherit;
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+  padding-top: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+}

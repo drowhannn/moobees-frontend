@@ -1,0 +1,42 @@
+.banner {
+  margin-top: 30px;
+  position: relative;
+}
+
+.banner img {
+  height: 400px;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.banner__content {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+}
+
+.banner__content h1 {
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+.banner__content p {
+  color: gray;
+  padding: 5px 0;
+}
+
+.banner__content button {
+  color: white;
+  background-color: rgb(224, 24, 24);
+  border: 1px solid rgb(224, 24, 24);
+  padding: 8px 25px;
+  font-size: 18px;
+  margin-top: 8px;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  transition: 500ms ease-in-out;
+}
+
+.banner__content button:hover {
+  background-color: transparent;
+}

@@ -51,7 +51,7 @@
   font-size: 13px;
 }
 
-button {
+.rightContainerColumn button {
   width: 80%;
   padding: 6px;
   border: none;
@@ -62,10 +62,8 @@ button {
   transition: 500ms ease-in-out;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  border: 1px solid red;
+  border: 1px solid rgb(224, 24, 24);
 }
 button:hover {
-  background-color: inherit;
-  border: 1px solid red;
-  color: white;
+  background-color: transparent;
 }
