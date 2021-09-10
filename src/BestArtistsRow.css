@@ -1,8 +1,8 @@
 .bestArtistsRow {
-  margin-top: 10px;
+  margin-top: 25px;
 }
 .row__artists {
-  margin-top: 10px;
+  margin-top: 25px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -11,26 +11,22 @@
 .row__artist {
   position: relative;
   border: 5px solid transparent;
-  border-radius: 20px;
   height: 200px;
   width: 160px;
-  overflow: hidden;
-}
-.row__artist:hover {
-  border: 5px solid red;
+  transition: 400ms ease-in;
 }
 
-.row__artist:hover img {
-  transform: scale(1.09);
+.row__artist:hover {
+  transform: scale(1.2);
 }
 
 .row__artist:hover .row__artist__contentDiv {
-  background-color: rgb(0, 0, 0, 50%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), black);
 }
 .row__artist img {
   height: 100%;
   width: 100%;
-  border-radius: 20px;
+  border-radius: 6px;
   transition: 300ms ease-in;
 }
 
@@ -58,4 +54,5 @@
 }
 .row__artist__content__stars .MuiSvgIcon-root {
   color: yellow;
+  font-size: 15px;
 }

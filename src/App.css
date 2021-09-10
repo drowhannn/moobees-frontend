@@ -7,3 +7,7 @@
   background-color: #191a1f;
   color: #fff;
 }
+
+button {
+  cursor: pointer;
+}
