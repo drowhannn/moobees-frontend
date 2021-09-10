@@ -11,6 +11,7 @@
   padding-bottom: 15px;
   overflow-x: hidden;
   overflow-y: hidden;
+  border-left: 1px solid gray;
 }
 .rightContainer::-webkit-scrollbar {
   display: none;

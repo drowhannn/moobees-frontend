@@ -1,4 +1,4 @@
-.row {
+.bestArtistsRow {
   margin-top: 10px;
 }
 .row__artists {
@@ -10,12 +10,28 @@
 
 .row__artist {
   position: relative;
+  border: 5px solid transparent;
+  border-radius: 20px;
+  height: 200px;
+  width: 160px;
+  overflow: hidden;
+}
+.row__artist:hover {
+  border: 5px solid red;
 }
 
+.row__artist:hover img {
+  transform: scale(1.09);
+}
+
+.row__artist:hover .row__artist__contentDiv {
+  background-color: rgb(0, 0, 0, 50%);
+}
 .row__artist img {
-  height: 220px;
-  width: 170px;
+  height: 100%;
+  width: 100%;
   border-radius: 20px;
+  transition: 300ms ease-in;
 }
 
 .row__artist__contentDiv {

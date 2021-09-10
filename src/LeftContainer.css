@@ -8,6 +8,7 @@
   background-color: inherit;
   padding-top: 15px;
   padding-left: 10px;
+  border-right: 1px solid gray;
 }
 
 .leftContainer__heading {
