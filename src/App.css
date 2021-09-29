@@ -2,16 +2,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 .app {
-  background-color: #191a1f;
-  color: #fff;
-  display: grid;
-  width: 100%;
-  /* grid-template-columns: 1fr 5fr; */
-  padding-top: 25px;
+  background-color: #111;
+  color: white;
 }
-
 button {
   cursor: pointer;
 }

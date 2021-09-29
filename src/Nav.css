@@ -1,20 +1,74 @@
-.nav ul {
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  width: 100%;
+  padding: 10px 20px;
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+}
+.nav__bg {
+  background-color: #111;
+}
+.nav__left {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.nav__left > .MuiSvgIcon-root {
+  color: red;
+}
+
+.nav__left > p {
+  padding-left: 2px;
+  padding-right: 2px;
+  font-weight: 600;
+}
+
+.nav__left > span {
+  font-weight: 800;
+  color: red;
+}
+.nav__right > .MuiSvgIcon-root {
+  color: white;
+}
+/* .nav__items > ul {
   display: flex;
   list-style: none;
+}
+
+.nav__item > a {
+  color: white;
+  padding: 25px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+.nav__item > a:hover {
+  color: red;
+}
+
+.nav__search {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
   align-items: center;
 }
 
-.nav ul li {
-  padding-right: 20px;
-}
-
-.nav ul li a {
-  text-decoration: none;
+.nav__search > .MuiSvgIcon-root {
   color: gray;
-  font-weight: 600;
-  /* transition: 500ms ease-in; */
+  margin-left: 5px;
 }
 
-.nav ul li a:hover {
-  color: white;
-}
+.nav__search > input {
+  background-color: inherit;
+  border: none;
+  padding: 8px;
+  border-radius: inherit;
+  font-size: 15px;
+} */

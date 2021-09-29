@@ -7,11 +7,12 @@ function Banner() {
     genre: ["Action", "Comedy"],
   };
   return (
-    <div className="banner">
-      <img
-        src="https://www.teahub.io/photos/full/0-7085_deadpool-wallpaper-for-laptop.jpg"
-        alt=""
-      />
+    <div
+      className="banner"
+      style={{
+        backgroundImage: `url("https://www.teahub.io/photos/full/0-7085_deadpool-wallpaper-for-laptop.jpg")`,
+      }}
+    >
       <div className="banner__content">
         <h1>{movie.name}</h1>
         <p>{movie.genre.join(", ")}</p>

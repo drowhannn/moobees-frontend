@@ -1,11 +1,9 @@
 .banner {
   position: relative;
-  margin-top: 25px;
-}
-
-.banner img {
   height: 500px;
-  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .banner__content {
@@ -17,6 +15,7 @@
 .banner__content h1 {
   font-size: 45px;
   text-transform: uppercase;
+  color: white;
 }
 
 .banner__content p {

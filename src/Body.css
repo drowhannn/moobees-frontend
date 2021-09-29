@@ -1,9 +1,0 @@
-.body {
-  height: 100vh;
-  background-color: inherit;
-  overflow-y: scroll;
-  position: relative;
-}
-.body::-webkit-scrollbar {
-  display: none;
-}
