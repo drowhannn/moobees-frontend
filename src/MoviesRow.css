@@ -1,11 +1,24 @@
 .moviesRow {
-  margin-top: 25px;
+  margin: 25px;
+}
+.moviesRow__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.moviesRow__heading > a {
+  color: white;
+  text-decoration: underline;
+  margin-right: 5vw;
+  transition: 300ms ease-in;
+}
+.moviesRow__heading > a:hover {
+  color: red;
 }
 .row__movies {
   margin-top: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .row__movie {
@@ -80,4 +93,21 @@
   color: yellow;
   margin-right: 5px;
   font-size: 15px;
+}
+
+@media only screen and (max-width: 950px) {
+  .row__movies {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    place-items: center;
+  }
+  .moviesRow {
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .moviesRow {
+    margin: 0;
+  }
 }

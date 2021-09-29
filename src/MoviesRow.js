@@ -31,10 +31,26 @@ function MoviesRow({ title }) {
       genre: ["SciFi", "Fantasy"],
       rating: "7.8",
     },
+    {
+      name: "Avengers Endgame",
+      posterUrl:
+        "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/d1pklzbuyaab0la-1552597012.jpg",
+      genre: ["Action", "Thriller"],
+      rating: "9.1",
+    },
+    {
+      name: "Deadpool",
+      posterUrl: "https://i.ebayimg.com/images/g/QEYAAOSw4DJYmmOQ/s-l400.jpg",
+      genre: ["Action", "Comedy"],
+      rating: "8.9",
+    },
   ];
   return (
     <div className="moviesRow">
-      <h3>{title}</h3>
+      <div className="moviesRow__heading">
+        <h3>{title}</h3>
+        <a href="">View all</a>
+      </div>
       <div className="row__movies">
         {movies.map((movie) => (
           <div className="row__movie">

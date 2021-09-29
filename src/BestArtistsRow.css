@@ -1,11 +1,11 @@
 .bestArtistsRow {
-  margin-top: 25px;
+  margin: 25px;
 }
 .row__artists {
   margin-top: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .row__artist {
@@ -55,4 +55,20 @@
 .row__artist__content__stars .MuiSvgIcon-root {
   color: yellow;
   font-size: 15px;
+}
+
+@media only screen and (max-width: 950px) {
+  .row__artists {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    place-items: center;
+  }
+  .bestArtistsRow {
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .bestArtistsRow {
+    margin: 0;
+  }
 }

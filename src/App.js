@@ -1,14 +1,12 @@
 import "./App.css";
-import LeftContainer from "./LeftContainer";
-import MiddleContainer from "./MiddleContainer";
-import RightContainer from "./RightContainer";
+// import Sidebar from "./Sidebar";
+import Body from "./Body";
 
 function App() {
   return (
     <div className="app">
-      <LeftContainer />
-      <MiddleContainer />
-      <RightContainer />
+      {/* <Sidebar /> */}
+      <Body />
     </div>
   );
 }

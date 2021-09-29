@@ -1,12 +1,11 @@
 .banner {
-  margin-top: 30px;
   position: relative;
+  margin-top: 25px;
 }
 
 .banner img {
-  height: 400px;
+  height: 500px;
   width: 100%;
-  border-radius: 30px;
 }
 
 .banner__content {

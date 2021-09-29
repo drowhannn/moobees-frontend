@@ -1,17 +1,22 @@
 import React from "react";
 import Banner from "./Banner";
-import "./MiddleContainer.css";
+import "./Body.css";
 import Nav from "./Nav";
 import BestArtistsRow from "./BestArtistsRow";
 import MoviesRow from "./MoviesRow";
 import Footer from "./Footer";
+// import { useMediaQuery } from "react-responsive";
 
-function MiddleContainer() {
+function Body() {
+  // const isLaptopScreen = useMediaQuery({ query: "(min-width: 1224px)" });
+
   return (
-    <div className="middleContainer">
+    <div className="body">
       <Nav />
       <Banner />
       <BestArtistsRow />
+      {/* {isLaptopScreen || <MoviesRow title="Popular Movies" />} */}
+      <MoviesRow title="Popular Movies" />
       <MoviesRow title="Trending Movies" />
       <MoviesRow title="Action Movies" />
       <MoviesRow title="Thriller Movies" />
@@ -24,4 +29,4 @@ function MiddleContainer() {
   );
 }
 
-export default MiddleContainer;
+export default Body;
