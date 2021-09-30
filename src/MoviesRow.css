@@ -24,8 +24,8 @@
 .row__movie {
   position: relative;
   border: 5px solid transparent;
-  height: 200px;
-  width: 160px;
+  height: 240px;
+  width: 196px;
   transition: 400ms ease-in;
   cursor: pointer;
 }
@@ -33,6 +33,7 @@
 .row__movie:hover .row__movie__contentDiv {
   display: block;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), black);
+  border-radius: 6px;
 }
 .row__movie:hover {
   transform: scale(1.2);
@@ -41,8 +42,8 @@
 .row__movie img {
   height: 100%;
   width: 100%;
-  border-radius: 6px;
   transition: 300ms ease-in;
+  border-radius: 6px;
 }
 
 .row__movie__contentDiv {
@@ -95,11 +96,15 @@
   font-size: 15px;
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1300px) {
   .row__movies {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     place-items: center;
+  }
+  .row__movie {
+    height: 200px;
+    width: 160px;
   }
   .moviesRow {
     margin: 10px;

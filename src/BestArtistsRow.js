@@ -40,11 +40,11 @@ function BestArtistsRow() {
         "https://assets-cdn.kathmandupost.com/uploads/source/news/2016/entertainment/18072016013035rs_634x761-160324135931-634.Chris-Hemsworth-Modern-Luxury2-Kf.32416.jpg",
     },
     {
-      name: "Kit Harington",
-      numOfMovies: 32,
-      rating: 4,
+      name: "Robert Downey Jr",
+      numOfMovies: 55,
+      rating: 5,
       profileImageUrl:
-        "https://i.pinimg.com/564x/94/70/80/9470806dd0f216046421c5388681ab98.jpg",
+        "https://icon-library.com/images/tony-stark-icon/tony-stark-icon-26.jpg",
     },
   ];
 

@@ -18,6 +18,7 @@ function Banner() {
         <p>{movie.genre.join(", ")}</p>
         <button>Watch</button>
       </div>
+      <div className="banner__fadeBottom"></div>
     </div>
   );
 }

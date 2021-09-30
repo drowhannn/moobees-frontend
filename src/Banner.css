@@ -9,7 +9,8 @@
 .banner__content {
   position: absolute;
   top: 55%;
-  left: 5%;
+  left: 7%;
+  z-index: 50;
 }
 
 .banner__content h1 {
@@ -37,4 +38,16 @@
 
 .banner__content button:hover {
   background-color: transparent;
+}
+.banner__fadeBottom {
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
 }
