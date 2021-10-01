@@ -19,6 +19,7 @@
   margin-top: 25px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  place-items: center;
 }
 
 .row__movie {

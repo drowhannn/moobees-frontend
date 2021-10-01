@@ -4,21 +4,22 @@ import Nav from "./Nav";
 import BestArtistsRow from "./BestArtistsRow";
 import MoviesRow from "./MoviesRow";
 import Footer from "./Footer";
+import requests from "./requests";
 
 function App() {
   return (
     <div className="app">
       <Nav />
-      <Banner />
+      <Banner fetchUrl={requests.fetchAll} />
       <BestArtistsRow />
-      <MoviesRow title="Popular Movies" />
-      <MoviesRow title="Trending Movies" />
-      <MoviesRow title="Action Movies" />
-      <MoviesRow title="Thriller Movies" />
-      <MoviesRow title="Comedy Movies" />
-      <MoviesRow title="Romantic Movies" />
-      <MoviesRow title="SciFi Movies" />
-      <MoviesRow title="Documentries" />
+      <MoviesRow title="Popular Movies" fetchUrl={requests.fetchAll} />
+      <MoviesRow title="Trending Movies" fetchUrl={requests.fetchAll} />
+      <MoviesRow title="Action Movies" fetchUrl={requests.fetchAll} />
+      <MoviesRow title="Thriller Movies" fetchUrl={requests.fetchAll} />
+      <MoviesRow title="Comedy Movies" fetchUrl={requests.fetchAll} />
+      <MoviesRow title="Romantic Movies" fetchUrl={requests.fetchAll} />
+      <MoviesRow title="SciFi Movies" fetchUrl={requests.fetchAll} />
+      <MoviesRow title="Documentries" fetchUrl={requests.fetchAll} />
       <Footer />
     </div>
   );
