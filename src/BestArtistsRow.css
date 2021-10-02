@@ -60,15 +60,21 @@
   font-size: 15px;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1400px) {
+  .row__artist {
+    height: 200px;
+    width: 180px;
+  }
+}
+@media only screen and (max-width: 900px) {
   .row__artists {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     place-items: center;
   }
   .row__artist {
-    height: 200px;
-    width: 160px;
+    height: 180px;
+    width: 150px;
   }
   .bestArtistsRow {
     margin: 10px;

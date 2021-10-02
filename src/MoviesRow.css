@@ -63,6 +63,7 @@
   align-content: center;
   margin-top: 25%;
   overflow: hidden;
+  text-align: center;
 }
 
 .row__movie__content p {
@@ -97,15 +98,27 @@
   font-size: 15px;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1400px) {
+  .row__movie {
+    height: 216px;
+    width: 176px;
+  }
+  .row__movie:hover {
+    transform: scale(1.16);
+  }
+}
+@media only screen and (max-width: 1130px) {
   .row__movies {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     place-items: center;
   }
   .row__movie {
-    height: 200px;
-    width: 160px;
+    height: 192px;
+    width: 157px;
+  }
+  .row__movie:hover {
+    transform: scale(1.14);
   }
   .moviesRow {
     margin: 10px;
