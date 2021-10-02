@@ -20,22 +20,26 @@ function MoviesRow({ title, fetchUrl }) {
         <a href="">View all</a>
       </div>
       <div className="row__movies">
-        {movies?.map((movie) => (
-          <div className="row__movie">
-            <img src={movie.posterUrl} alt="" />
-            <div className="row__movie__contentDiv">
-              <div className="row__movie__content">
-                <h5>{movie.name}</h5>
-                <p>{movie.genres.join(", ")}</p>
-                <div className="row__movie__content__rating">
-                  <StarIcon />
-                  <span>{movie.rating}</span>
+        {movies.length ? (
+          movies?.map((movie) => (
+            <div className="row__movie">
+              <img src={movie.posterUrl} alt="" />
+              <div className="row__movie__contentDiv">
+                <div className="row__movie__content">
+                  <h5>{movie.name}</h5>
+                  <p>{movie.genres.join(", ")}</p>
+                  <div className="row__movie__content__rating">
+                    <StarIcon />
+                    <span>{movie.rating}</span>
+                  </div>
+                  <button>Watch</button>
                 </div>
-                <button>Watch</button>
               </div>
             </div>
-          </div>
-        ))}
+          ))
+        ) : (
+          <p>No movies to display.</p>
+        )}
       </div>
     </div>
   );

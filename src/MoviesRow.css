@@ -9,7 +9,7 @@
 .moviesRow__heading > a {
   color: white;
   text-decoration: underline;
-  margin-right: 5vw;
+  margin-right: 2vw;
   transition: 300ms ease-in;
 }
 .moviesRow__heading > a:hover {

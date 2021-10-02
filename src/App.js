@@ -10,16 +10,14 @@ function App() {
   return (
     <div className="app">
       <Nav />
-      <Banner fetchUrl={requests.fetchAll} />
-      <BestArtistsRow />
-      <MoviesRow title="Popular Movies" fetchUrl={requests.fetchAll} />
-      <MoviesRow title="Trending Movies" fetchUrl={requests.fetchAll} />
-      <MoviesRow title="Action Movies" fetchUrl={requests.fetchAll} />
-      <MoviesRow title="Thriller Movies" fetchUrl={requests.fetchAll} />
-      <MoviesRow title="Comedy Movies" fetchUrl={requests.fetchAll} />
-      <MoviesRow title="Romantic Movies" fetchUrl={requests.fetchAll} />
-      <MoviesRow title="SciFi Movies" fetchUrl={requests.fetchAll} />
-      <MoviesRow title="Documentries" fetchUrl={requests.fetchAll} />
+      <Banner fetchUrl={requests.fetchLatest} />
+      {/* <BestArtistsRow /> */}
+      <MoviesRow title="Latest Movies" fetchUrl={requests.fetchLatest} />
+      <MoviesRow title="Action Movies" fetchUrl={requests.fetchAction} />
+      <MoviesRow title="Thriller Movies" fetchUrl={requests.fetchThriller} />
+      <MoviesRow title="Comedy Movies" fetchUrl={requests.fetchComedy} />
+      <MoviesRow title="Romance Movies" fetchUrl={requests.fetchRomance} />
+      <MoviesRow title="SciFi Movies" fetchUrl={requests.fetchSciFi} />
       <Footer />
     </div>
   );
