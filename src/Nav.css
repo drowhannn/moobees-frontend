@@ -1,7 +1,6 @@
 .nav {
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,14 +9,13 @@
   padding: 10px 20px;
   transition-timing-function: ease-in;
   transition: 0.5s;
-}
-.nav__bg {
   background-color: #111;
 }
 .nav__left {
   display: flex;
   align-items: center;
   color: white;
+  text-decoration: none;
 }
 
 .nav__left > .MuiSvgIcon-root {

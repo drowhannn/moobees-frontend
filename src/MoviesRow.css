@@ -29,6 +29,7 @@
   width: 196px;
   transition: 400ms ease-in;
   cursor: pointer;
+  color: white;
 }
 
 .row__movie:hover .row__movie__contentDiv {
@@ -67,24 +68,9 @@
 }
 
 .row__movie__content p {
-  color: gray;
-  font-size: 15px;
+  color: rgb(211, 211, 211);
+  font-size: 12px;
   font-weight: 500;
-}
-
-.row__movie__content button {
-  font-size: 18px;
-  border: 1px solid red;
-  background-color: red;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 10px;
-  margin-top: 5px;
-  transition: 500ms ease-in;
-}
-
-.row__movie__content button:hover {
-  background-color: rgb(0, 0, 0, 50%);
 }
 .row__movie__content__rating {
   display: flex;

@@ -6,6 +6,7 @@ const requests = {
   fetchSciFi: "/movies/sciFi",
   fetchThriller: "/movies/thriller",
   fetchRomance: "/movies/romance",
+  fetchMovie: "/movie/",
 };
 
 export default requests;

@@ -1,0 +1,114 @@
+.movie {
+  margin: 20px 100px;
+}
+
+.movie__header {
+  display: flex;
+  flex-direction: column;
+}
+.movie__header > p {
+  padding: 5px 0;
+  font-size: 15px;
+  color: lightgray;
+}
+
+.movie__body {
+  display: flex;
+  margin-top: 15px;
+}
+.movie__body > iframe {
+  width: 75%;
+  aspect-ratio: 16/9;
+}
+
+.movie__bodyDetails {
+  height: 450px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25%;
+}
+
+.movie__bodyDetail > h4 {
+  font-size: 18px;
+  color: white;
+}
+.movie__bodyDetail > p {
+  display: flex;
+  flex-wrap: wrap;
+  color: lightgray;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.movie__bodyDetail.keywords > p > span {
+  padding: 5px 10px;
+  border: 1px solid white;
+  margin: 5px;
+  border-radius: 30px;
+}
+
+.movie__bodyDetail.keywords > p > span:hover {
+  background-color: rgba(128, 128, 128, 0.25);
+  cursor: pointer;
+}
+
+.movie__description {
+  margin-top: 15px;
+  max-width: 800px;
+}
+
+.movie__descriptionGenres {
+  display: flex;
+  flex-wrap: wrap;
+}
+.movie__descriptionGenres > span {
+  padding: 8px 12px;
+  border: 1px solid white;
+  border-radius: 30px;
+  margin: 5px;
+  font-size: 15px;
+}
+.movie__descriptionGenres > span:hover {
+  background-color: rgba(128, 128, 128, 0.25);
+  cursor: pointer;
+}
+
+.movie__descriptionOverview {
+  padding: 15px 0;
+  font-size: 18px;
+  border-bottom: 1px solid gray;
+}
+
+.movie__descriptionDirector {
+  padding: 15px 0;
+  border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+.movie__descriptionDirector > h4 {
+  font-size: 18px;
+  margin-right: 15px;
+}
+.movie__descriptionDirector > p {
+  font-size: 15px;
+}
+.movie__descriptionStars {
+  padding: 15px 0;
+  border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+.movie__descriptionStars > h4 {
+  font-size: 18px;
+  margin-right: 15px;
+}
+.movie__descriptionStars > p {
+  font-size: 15px;
+  padding-top: 5px;
+}

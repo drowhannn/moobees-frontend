@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Banner.css";
 import axios from "./axios";
+import { Link } from "react-router-dom";
 
 function Banner({ fetchUrl }) {
   const [movie, setMovie] = useState();
@@ -23,7 +24,9 @@ function Banner({ fetchUrl }) {
       <div className="banner__content">
         <h1>{movie?.name}</h1>
         <p>{movie?.genres.join(", ")}</p>
-        <button>Watch</button>
+        <Link to={`/movie/${movie?._id}`}>
+          <button>Watch</button>
+        </Link>
       </div>
       <div className="banner__fadeBottom"></div>
     </div>
