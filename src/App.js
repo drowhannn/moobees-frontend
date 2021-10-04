@@ -7,6 +7,7 @@ import Footer from "./Footer";
 import requests from "./requests";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Movie from "./Movie";
+import Movies from "./Movies";
 
 function App() {
   return (
@@ -32,7 +33,10 @@ function App() {
             <MoviesRow title="SciFi Movies" fetchUrl={requests.fetchSciFi} />
           </Route>
           <Route exact path="/movie/:id">
-            <Movie fetchUrl={requests.fetchMovie} />
+            <Movie />
+          </Route>
+          <Route exact path="/movies/:genre">
+            <Movies />
           </Route>
         </Switch>
 

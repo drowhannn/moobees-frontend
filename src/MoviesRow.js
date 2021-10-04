@@ -18,7 +18,13 @@ function MoviesRow({ title, fetchUrl }) {
     <div className="moviesRow">
       <div className="moviesRow__heading">
         <h3>{title}</h3>
-        <a href="">View all</a>
+        <Link
+          to={`/movies/${
+            title.split(" ")[0][0].toLowerCase() + title.split(" ")[0].slice(1)
+          }`}
+        >
+          View all
+        </Link>
       </div>
       <div className="row__movies">
         {movies.length ? (

@@ -2,32 +2,42 @@ import React, { useState, useEffect } from "react";
 import "./Movie.css";
 import { useParams } from "react-router-dom";
 import axios from "./axios";
+import StarIcon from "@material-ui/icons/Star";
 
-const Movie = ({ fetchUrl }) => {
+const Movie = () => {
   const { id } = useParams();
   const [movie, setMovie] = useState({});
 
   useEffect(() => {
     async function fetchData() {
-      const request = await axios.get(fetchUrl + id);
+      const request = await axios.get("/movie/id/" + id);
       setMovie(request.data);
       return request;
     }
     fetchData();
-  }, [fetchUrl]);
+  }, []);
 
   return (
     <div className="movie">
       <div className="movie__header">
-        <h1>{movie?.name}</h1>
-        <p>
-          {movie?.releaseDate?.slice(0, 4)} - {movie?.ageRating} -{" "}
-          {movie?.runTime}
-        </p>
+        <div className="mover__headerLeft">
+          <h1>{movie?.name}</h1>
+          <p>
+            {movie?.releaseDate?.slice(0, 4)} - {movie?.ageRating} -{" "}
+            {movie?.runTime}
+          </p>
+        </div>
+        <div className="movie__headerRight">
+          <h3>Rating</h3>
+          <p>
+            <StarIcon />
+            {movie?.rating} / 10
+          </p>
+        </div>
       </div>
       <div className="movie__body">
         <iframe
-          src="https://www.youtube.com/embed/X2m-08cOAbc"
+          src={movie?.trailerUrl}
           title="YouTube video player"
           frameborder="0"
           allow=""

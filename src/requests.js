@@ -1,12 +1,11 @@
 const requests = {
   fetchAll: "/movies/all",
   fetchLatest: "/movies/latest",
-  fetchComedy: "/movies/comedy",
-  fetchAction: "/movies/action",
-  fetchSciFi: "/movies/sciFi",
-  fetchThriller: "/movies/thriller",
-  fetchRomance: "/movies/romance",
-  fetchMovie: "/movie/",
+  fetchComedy: "/movies/genre/comedy",
+  fetchAction: "/movies/genre/action",
+  fetchSciFi: "/movies/genre/sciFi",
+  fetchThriller: "/movies/genre/thriller",
+  fetchRomance: "/movies/genre/romance",
 };
 
 export default requests;
