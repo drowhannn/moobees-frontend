@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Movies.css";
 import { useParams } from "react-router-dom";
 import axios from "./axios";
+import MovieCard from "./MovieCard";
 
 const Movies = () => {
   const { genre } = useParams();
@@ -19,11 +20,15 @@ const Movies = () => {
   return (
     <div className="movies">
       <h2>{genre.charAt(0).toUpperCase() + genre.slice(1)} Movies</h2>
-      <div className="movies__collection">
-        {movies?.map((movie) => (
-          <></>
-        ))}
-      </div>
+      {movies.length ? (
+        <div className="row__movies">
+          {movies?.map((movie) => (
+            <MovieCard movie={movie} />
+          ))}
+        </div>
+      ) : (
+        <p>No movies to display.</p>
+      )}
     </div>
   );
 };

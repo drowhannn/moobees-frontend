@@ -22,89 +22,11 @@
   place-items: center;
 }
 
-.row__movie {
-  position: relative;
-  border: 5px solid transparent;
-  height: 240px;
-  width: 196px;
-  transition: 400ms ease-in;
-  cursor: pointer;
-  color: white;
-}
-
-.row__movie:hover .row__movie__contentDiv {
-  display: block;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), black);
-  border-radius: 6px;
-}
-.row__movie:hover {
-  transform: scale(1.2);
-}
-
-.row__movie img {
-  height: 100%;
-  width: 100%;
-  transition: 300ms ease-in;
-  border-radius: 6px;
-}
-
-.row__movie__contentDiv {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  display: none;
-}
-
-.row__movie__content {
-  display: grid;
-  place-items: center center;
-  height: 100%;
-  align-content: center;
-  margin-top: 25%;
-  overflow: hidden;
-  text-align: center;
-}
-
-.row__movie__content p {
-  color: rgb(211, 211, 211);
-  font-size: 12px;
-  font-weight: 500;
-}
-.row__movie__content__rating {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 13px;
-}
-.row__movie__content__rating .MuiSvgIcon-root {
-  color: yellow;
-  margin-right: 5px;
-  font-size: 15px;
-}
-
-@media only screen and (max-width: 1400px) {
-  .row__movie {
-    height: 216px;
-    width: 176px;
-  }
-  .row__movie:hover {
-    transform: scale(1.16);
-  }
-}
 @media only screen and (max-width: 1130px) {
   .row__movies {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     place-items: center;
-  }
-  .row__movie {
-    height: 192px;
-    width: 157px;
-  }
-  .row__movie:hover {
-    transform: scale(1.14);
   }
   .moviesRow {
     margin: 10px;

@@ -85,14 +85,15 @@
   display: flex;
   flex-wrap: wrap;
 }
-.movie__descriptionGenres > span {
+.movie__descriptionGenres span {
   padding: 8px 12px;
   border: 1px solid white;
   border-radius: 30px;
   margin: 5px;
   font-size: 15px;
+  color: white;
 }
-.movie__descriptionGenres > span:hover {
+.movie__descriptionGenres span:hover {
   background-color: rgba(128, 128, 128, 0.25);
   cursor: pointer;
 }
@@ -133,4 +134,7 @@
 .movie__descriptionStars > p {
   font-size: 15px;
   padding-top: 5px;
+}
+.movieGenre__link {
+  text-decoration: none;
 }

@@ -1,3 +1,7 @@
 .movies {
   margin: 20px 6vw;
+  min-height: 100vh;
+}
+.movies > h2 {
+  margin-bottom: 15px;
 }

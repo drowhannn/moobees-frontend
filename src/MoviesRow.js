@@ -3,6 +3,7 @@ import StarIcon from "@material-ui/icons/Star";
 import "./MoviesRow.css";
 import axios from "./axios";
 import { Link } from "react-router-dom";
+import MovieCard from "./MovieCard";
 
 function MoviesRow({ title, fetchUrl }) {
   const [movies, setMovies] = useState([]);
@@ -28,23 +29,7 @@ function MoviesRow({ title, fetchUrl }) {
       </div>
       <div className="row__movies">
         {movies.length ? (
-          movies?.map((movie) => (
-            <Link to={`/movie/${movie._id}`}>
-              <div className="row__movie">
-                <img src={movie.posterUrl} alt="" />
-                <div className="row__movie__contentDiv">
-                  <div className="row__movie__content">
-                    <h5>{movie.name}</h5>
-                    <p>{movie.genres.join(", ")}</p>
-                    <div className="row__movie__content__rating">
-                      <StarIcon />
-                      <span>{movie.rating}</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Link>
-          ))
+          movies?.map((movie) => <MovieCard movie={movie} />)
         ) : (
           <p>No movies to display.</p>
         )}

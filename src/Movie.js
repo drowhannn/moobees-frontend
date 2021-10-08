@@ -3,6 +3,7 @@ import "./Movie.css";
 import { useParams } from "react-router-dom";
 import axios from "./axios";
 import StarIcon from "@material-ui/icons/Star";
+import { Link } from "react-router-dom";
 
 const Movie = () => {
   const { id } = useParams();
@@ -84,7 +85,15 @@ const Movie = () => {
       <div className="movie__description">
         <div className="movie__descriptionGenres">
           {movie?.genres?.map((genre) => (
-            <span>{genre}</span>
+            <Link
+              className="movieGenre__link"
+              to={`/movies/${
+                genre.split(" ")[0][0].toLowerCase() +
+                genre.split(" ")[0].slice(1)
+              }`}
+            >
+              <span>{genre}</span>
+            </Link>
           ))}
         </div>
         <div className="movie__descriptionOverview">{movie?.description}</div>
