@@ -92,7 +92,7 @@ const Movie = () => {
                 genre.split(" ")[0].slice(1)
               }`}
             >
-              <span>{genre}</span>
+              <p>{genre}</p>
             </Link>
           ))}
         </div>

@@ -44,7 +44,7 @@
 }
 
 .movie__bodyDetails {
-  height: 450px;
+  min-height: 200px;
   margin-left: 20px;
   display: flex;
   flex-direction: column;
@@ -85,15 +85,15 @@
   display: flex;
   flex-wrap: wrap;
 }
-.movie__descriptionGenres span {
+.movie__descriptionGenres p {
   padding: 8px 12px;
   border: 1px solid white;
   border-radius: 30px;
-  margin: 5px;
   font-size: 15px;
   color: white;
+  margin: 5px;
 }
-.movie__descriptionGenres span:hover {
+.movie__descriptionGenres p:hover {
   background-color: rgba(128, 128, 128, 0.25);
   cursor: pointer;
 }
@@ -137,4 +137,43 @@
 }
 .movieGenre__link {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .movie {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .movie__body > iframe {
+    width: 85%;
+  }
+  .movie__bodyDetail h4 {
+    font-size: 16px;
+  }
+  .movie__bodyDetail p {
+    font-size: 14px;
+  }
+  .movie__bodyDetail.keywords span {
+    font-size: 12px;
+    padding: 3px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .movie__body {
+    flex-direction: column-reverse;
+  }
+  .movie__bodyDetails {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 150px;
+    justify-content: left;
+  }
+  .movie__bodyDetail {
+    min-width: 20%;
+    margin: 10px 15px;
+  }
+  .movie__body > iframe {
+    width: 100%;
+  }
 }
