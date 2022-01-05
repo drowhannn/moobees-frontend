@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Movie.css";
 import { useParams } from "react-router-dom";
 import axios from "./axios";
-import StarIcon from "@material-ui/icons/Star";
+import StarIcon from "@mui/icons-material/Star";
 import { Link } from "react-router-dom";
 
 const Movie = () => {

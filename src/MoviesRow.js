@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import StarIcon from "@material-ui/icons/Star";
+import StarIcon from "@mui/icons-material/Star";
 import "./MoviesRow.css";
 import axios from "./axios";
 import { Link } from "react-router-dom";

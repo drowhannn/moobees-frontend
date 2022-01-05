@@ -1,7 +1,7 @@
 import React from "react";
 import "./Nav.css";
-import GroupWorkIcon from "@material-ui/icons/GroupWork";
-import MenuIcon from "@material-ui/icons/Menu";
+import GroupWorkIcon from "@mui/icons-material/GroupWork";
+import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
 
 function Nav() {

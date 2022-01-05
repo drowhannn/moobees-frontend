@@ -1,6 +1,37 @@
 .footer {
-  margin-top: 15px;
-  padding: 50px;
-  border-top: 1px solid gray;
+  padding: 4vh 20vw;
+}
+.footer__icons {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10vw;
+}
+.footer__icons .MuiSvgIcon-root {
+  color: white;
+}
+.footer__icons .MuiSvgIcon-root:hover {
+  color: red;
+}
+.footer__options {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.footer__options > a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 15px;
+}
+
+.footer__options > a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.footer__copyright {
+  font-size: 10px;
   text-align: center;
+  margin-top: 10px;
 }
