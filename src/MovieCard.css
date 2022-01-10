@@ -14,9 +14,14 @@
 .movieCard:hover {
   transform: scale(1.2);
 }
+.movieCard__link {
+  height: 100%;
+  width: 100%;
+}
 .movieCard:hover .movieCard__content {
   display: grid;
-  height: 102%;
+  height: 105%;
+  width: 100%;
 }
 .movieCard__link {
   text-decoration: none;
