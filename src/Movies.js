@@ -15,7 +15,7 @@ const Movies = () => {
       return request;
     }
     fetchData();
-  }, []);
+  }, [genre]);
 
   return (
     <div className="movies">
