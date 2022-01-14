@@ -2,26 +2,39 @@ import React from "react";
 import "./Nav.css";
 import GroupWorkIcon from "@mui/icons-material/GroupWork";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import { useEffect, useState } from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import LoginIcon from "@mui/icons-material/Login";
+import SearchIcon from "@mui/icons-material/Search";
 
 function Nav() {
   const [isDropdownVisible, setIsDropDownVisible] = useState(false);
+  const [searchValue, setSearchValue] = useState();
+  const [ifSearch, setIfSearch] = useState(false);
   const onMenuIconClick = () => {
     setIsDropDownVisible(!isDropdownVisible);
   };
   const disableDropdown = () => {
     setIsDropDownVisible(false);
   };
+  const handleSearch = (e) => {
+    if (e.key === "Enter") {
+      setSearchValue(e.target.value);
+      setIfSearch(true);
+      e.preventDefault();
+    }
+  };
+
   useEffect(() => {
     setIsDropDownVisible(false);
-  }, []);
+    setIfSearch(false);
+  }, [searchValue]);
+
   return (
     <>
       <div className="nav">
-        <Link to="/" className="nav__left">
+        <Link to="/" className="nav__left" onClick={disableDropdown}>
           <GroupWorkIcon />
           <p>Moobees</p>
           <span>.</span>
@@ -32,15 +45,29 @@ function Nav() {
       </div>
 
       {isDropdownVisible && (
-        <div className="navDropdown" onClick={disableDropdown}>
+        <div className="navDropdown">
+          <div
+            className="navDropdown__noContent"
+            onClick={disableDropdown}
+          ></div>
           <div className="navDropdown__content">
-            <Link>
+            <div className="navDropdown__contentSearchbar">
+              <SearchIcon onClick={handleSearch} />
+              <input
+                type="text"
+                placeholder="Search for keyword....."
+                onKeyPress={handleSearch}
+                required
+              />
+            </div>
+            {ifSearch && <Redirect to={`/movies/keyword/${searchValue}`} />}
+            <Link onClick={disableDropdown}>
               <li>
                 Login
                 <LoginIcon />
               </li>
             </Link>
-            <Link>
+            <Link onClick={disableDropdown}>
               <li>SignUp</li>
             </Link>
 
@@ -48,29 +75,29 @@ function Nav() {
               Categories <KeyboardArrowDownIcon />
             </li>
 
-            <Link to="/movies/action">
+            <Link to="/movies/genre/action" onClick={disableDropdown}>
               <li className="list-items">Action</li>
             </Link>
-            <Link to="/movies/thriller">
+            <Link to="/movies/genre/thriller" onClick={disableDropdown}>
               <li className="list-items">Thriller</li>
             </Link>
 
-            <Link to="/movies/romance">
+            <Link to="/movies/genre/romance" onClick={disableDropdown}>
               <li className="list-items">Romance</li>
             </Link>
-            <Link to="/movies/adventure">
+            <Link to="/movies/genre/adventure" onClick={disableDropdown}>
               <li className="list-items">Adventure</li>
             </Link>
-            <Link to="/movies/sciFi">
+            <Link to="/movies/genre/sciFi" onClick={disableDropdown}>
               <li className="list-items">SciFi</li>
             </Link>
-            <Link to="/movies/comedy">
+            <Link to="/movies/genre/comedy" onClick={disableDropdown}>
               <li className="list-items">Comedy</li>
             </Link>
-            <Link>
+            <Link onClick={disableDropdown}>
               <li>About Us</li>
             </Link>
-            <Link>
+            <Link onClick={disableDropdown}>
               {" "}
               <li>Contact Us</li>
             </Link>

@@ -36,6 +36,9 @@
 .nav__right > .MuiSvgIcon-root {
   color: white;
 }
+.nav__right > .MuiSvgIcon-root:hover {
+  color: red;
+}
 
 /* dropdown */
 
@@ -45,11 +48,15 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgb(0, 0, 0, 90%);
   z-index: 100;
   margin-top: 6vh;
+  display: flex;
 }
-
+.navDropdown__noContent {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.9);
+}
 .navDropdown__content {
   height: 100%;
   width: 40%;
@@ -58,6 +65,35 @@
   right: 0;
   display: grid;
   padding-bottom: 25%;
+}
+.navDropdown__contentSearchbar {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 60px;
+  background-color: white;
+  border-radius: 10px;
+}
+.navDropdown__contentSearchbar > .MuiSvgIcon-root {
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 3px;
+}
+.navDropdown__contentSearchbar > .MuiSvgIcon-root:hover {
+  color: red;
+}
+.navDropdown__contentSearchbar > input {
+  width: 100%;
+  border: none;
+  padding: 10px 10px;
+  background-color: transparent;
+  font-size: 17px;
+  color: red;
+  outline: none;
 }
 
 .navDropdown__content li {

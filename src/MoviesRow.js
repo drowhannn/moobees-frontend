@@ -20,7 +20,7 @@ function MoviesRow({ title, fetchUrl }) {
       <div className="moviesRow__heading">
         <h3>{title}</h3>
         <Link
-          to={`/movies/${
+          to={`/movies/genre/${
             title.split(" ")[0][0].toLowerCase() + title.split(" ")[0].slice(1)
           }`}
         >

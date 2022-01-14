@@ -56,22 +56,26 @@
   font-size: 18px;
   color: white;
 }
+
 .movie__bodyDetail > p {
   display: flex;
   flex-wrap: wrap;
-  color: lightgray;
   font-size: 15px;
   margin-top: 5px;
 }
+.movie__bodyDetail > p > a {
+  text-decoration: none;
+}
 
-.movie__bodyDetail.keywords > p > span {
+.movie__bodyDetail.keywords > p > a {
   padding: 5px 10px;
   border: 1px solid white;
   margin: 5px;
   border-radius: 30px;
+  color: lightgray;
 }
 
-.movie__bodyDetail.keywords > p > span:hover {
+.movie__bodyDetail.keywords > p > a:hover {
   background-color: rgba(128, 128, 128, 0.25);
   cursor: pointer;
 }

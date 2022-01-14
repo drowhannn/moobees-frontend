@@ -76,7 +76,7 @@ const Movie = () => {
             <h4>Keywords</h4>
             <p>
               {movie?.keywords?.map((keyword) => (
-                <span>{keyword}</span>
+                <Link to={`/movies/keyword/${keyword}`}>{keyword}</Link>
               ))}
             </p>
           </div>
@@ -87,7 +87,7 @@ const Movie = () => {
           {movie?.genres?.map((genre) => (
             <Link
               className="movieGenre__link"
-              to={`/movies/${
+              to={`/movies/genre/${
                 genre.split(" ")[0][0].toLowerCase() +
                 genre.split(" ")[0].slice(1)
               }`}

@@ -4,22 +4,34 @@ import { useParams } from "react-router-dom";
 import axios from "./axios";
 import MovieCard from "./MovieCard";
 
-const Movies = () => {
-  const { genre } = useParams();
+const Movies = ({ isGenre }) => {
+  const { genre, keyword } = useParams();
+  const genreORkeyword = isGenre ? genre : keyword;
+  console.log(genreORkeyword);
   const [movies, setMovies] = useState([]);
   useEffect(() => {
-    const fetchUrl = genre === "latest" ? "/movies/" : "movies/genre/";
+    const fetchUrl = isGenre
+      ? genreORkeyword === "latest"
+        ? "/movies/"
+        : "/movies/genre/"
+      : "/movies/keyword/";
     async function fetchData() {
-      const request = await axios.get(fetchUrl + genre);
+      const request = await axios.get(fetchUrl + genreORkeyword);
       setMovies(request.data);
       return request;
     }
     fetchData();
-  }, [genre]);
+  }, [genreORkeyword]);
 
   return (
     <div className="movies">
-      <h2>{genre.charAt(0).toUpperCase() + genre.slice(1)} Movies</h2>
+      <h2>
+        {isGenre &&
+          genreORkeyword.charAt(0).toUpperCase() +
+            genreORkeyword.slice(1) +
+            " Movies"}
+        {!isGenre && `Movies for keyword "${genreORkeyword}"`}
+      </h2>
       {movies.length ? (
         <div className="row__movies">
           {movies?.map((movie) => (

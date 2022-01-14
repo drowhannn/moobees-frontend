@@ -35,8 +35,11 @@ function App() {
           <Route exact path="/movie/:id">
             <Movie />
           </Route>
-          <Route exact path="/movies/:genre">
-            <Movies />
+          <Route exact path="/movies/genre/:genre">
+            <Movies isGenre={true} />
+          </Route>
+          <Route exact path="/movies/keyword/:keyword">
+            <Movies isGenre={false} />
           </Route>
         </Switch>
 

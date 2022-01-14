@@ -11,21 +11,21 @@ function Footer() {
   return (
     <div className="footer">
       <div className="footer__icons">
-        <Link>
+        <a href="https://fb.com" target="_blank">
           <FacebookIcon />
-        </Link>
-        <Link>
+        </a>
+        <a href="https://instagram.com" target="_blank">
           <InstagramIcon />
-        </Link>
-        <Link>
+        </a>
+        <a href="https://twitter.com" target="_blank">
           <TwitterIcon />
-        </Link>
-        <Link>
+        </a>
+        <a href="https://linkedin.com" target="_blank">
           <LinkedInIcon />
-        </Link>
-        <Link>
+        </a>
+        <a href="https://youtube.com" target="_blank">
           <YouTubeIcon />
-        </Link>
+        </a>
       </div>
       <div className="footer__options">
         <Link>Get Moobees App</Link>
