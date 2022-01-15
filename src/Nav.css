@@ -85,6 +85,7 @@
 }
 .navDropdown__contentSearchbar > .MuiSvgIcon-root:hover {
   color: red;
+  cursor: pointer;
 }
 .navDropdown__contentSearchbar > input {
   width: 100%;

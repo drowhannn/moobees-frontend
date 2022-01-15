@@ -10,8 +10,9 @@ import SearchIcon from "@mui/icons-material/Search";
 
 function Nav() {
   const [isDropdownVisible, setIsDropDownVisible] = useState(false);
-  const [searchValue, setSearchValue] = useState();
+  const [searchValue, setSearchValue] = useState("");
   const [ifSearch, setIfSearch] = useState(false);
+  const [searchBox, setSearchBox] = useState();
   const onMenuIconClick = () => {
     setIsDropDownVisible(!isDropdownVisible);
   };
@@ -19,17 +20,28 @@ function Nav() {
     setIsDropDownVisible(false);
   };
   const handleSearch = (e) => {
-    if (e.key === "Enter") {
+    if (e.target.id === "searchIcon") {
+      if (searchBox !== "undefined" && searchBox.value !== "") {
+        setSearchValue(searchBox.value);
+        setIfSearch(true);
+        e.preventDefault();
+      }
+    } else {
+      searchBox || setSearchBox(e.target);
       setSearchValue(e.target.value);
-      setIfSearch(true);
-      e.preventDefault();
+      if (e.key === "Enter" && searchValue !== "") {
+        setIfSearch(true);
+        e.preventDefault();
+      }
     }
   };
 
   useEffect(() => {
+    setSearchValue("");
     setIsDropDownVisible(false);
     setIfSearch(false);
-  }, [searchValue]);
+    setSearchBox();
+  }, [ifSearch]);
 
   return (
     <>
@@ -52,7 +64,7 @@ function Nav() {
           ></div>
           <div className="navDropdown__content">
             <div className="navDropdown__contentSearchbar">
-              <SearchIcon onClick={handleSearch} />
+              <SearchIcon onClick={handleSearch} id="searchIcon" />
               <input
                 type="text"
                 placeholder="Search for keyword....."
