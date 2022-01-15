@@ -21,7 +21,7 @@ function Nav() {
   };
   const handleSearch = (e) => {
     if (e.target.id === "searchIcon") {
-      if (searchBox !== "undefined" && searchBox.value !== "") {
+      if (searchBox && searchBox.value !== "") {
         setSearchValue(searchBox.value);
         setIfSearch(true);
         e.preventDefault();
