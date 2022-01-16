@@ -1,0 +1,36 @@
+.admin {
+  width: 100vw;
+  height: 100vh;
+}
+
+.admin__login {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.admin__login > label {
+  font-size: 24px;
+}
+
+.admin__login > input {
+  padding: 15px 5px 15px 5px;
+  font-size: 20px;
+  border: none;
+  color: red;
+  margin: 25px 0;
+}
+
+.admin__login > button {
+  padding: 15px;
+  font-size: 24px;
+  border: 1px solid transparent;
+}
+
+.admin__login > button:hover {
+  color: white;
+  background-color: transparent;
+  border: 1px solid red;
+  transition: 300ms ease-in;
+}

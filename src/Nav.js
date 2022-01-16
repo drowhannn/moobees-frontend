@@ -110,8 +110,10 @@ function Nav() {
               <li>About Us</li>
             </Link>
             <Link onClick={disableDropdown}>
-              {" "}
               <li>Contact Us</li>
+            </Link>
+            <Link to="/admin" onClick={disableDropdown}>
+              <li>Admin</li>
             </Link>
           </div>
         </div>
