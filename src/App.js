@@ -8,7 +8,6 @@ import requests from "./requests";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Movie from "./Movie";
 import Movies from "./Movies";
-import Admin from "./Admin";
 
 function App() {
   return (
@@ -41,9 +40,6 @@ function App() {
           </Route>
           <Route exact path="/movies/keyword/:keyword">
             <Movies isGenre={false} />
-          </Route>
-          <Route exact path="/admin">
-            <Admin />
           </Route>
         </Switch>
 

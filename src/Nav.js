@@ -112,9 +112,6 @@ function Nav() {
             <Link onClick={disableDropdown}>
               <li>Contact Us</li>
             </Link>
-            <Link to="/admin" onClick={disableDropdown}>
-              <li>Admin</li>
-            </Link>
           </div>
         </div>
       )}
