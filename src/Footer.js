@@ -28,15 +28,15 @@ function Footer() {
         </a>
       </div>
       <div className="footer__options">
-        <Link>Get Moobees App</Link>
-        <Link>Help</Link>
-        <Link>FAQs</Link>
-        <Link>Moobees Developer</Link>
-        <Link>Ranking Method</Link>
-        <Link>Conditions of Use</Link>
-        <Link>Privacy Policy</Link>
-        <Link>Feedback</Link>
-        <Link>Moobees API</Link>
+        <Link to="/markdown/getMoobeesApp">Get Moobees App</Link>
+        <Link to="/markdown/help">Help</Link>
+        <Link to="/markdown/faqs">FAQs</Link>
+        <Link to="/markdown/mooobeesDeveloper">Moobees Developer</Link>
+        <Link to="/markdown/rankingMethod">Ranking Method</Link>
+        <Link to="/markdown/conditionsOfUse">Conditions of Use</Link>
+        <Link to="/markdown/privacyPolicy">Privacy Policy</Link>
+        <Link to="/markdown/feedback">Feedback</Link>
+        <Link to="/markdown/moobeesAPI">Moobees API</Link>
       </div>
       <div className="footer__copyright">
         All Rights Reserved &copy; Rohan Dhimal
