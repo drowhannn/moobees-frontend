@@ -31,7 +31,7 @@ function Footer() {
         <Link to="/markdown/getMoobeesApp">Get Moobees App</Link>
         <Link to="/markdown/help">Help</Link>
         <Link to="/markdown/faqs">FAQs</Link>
-        <Link to="/markdown/mooobeesDeveloper">Moobees Developer</Link>
+        <Link to="/markdown/moobeesDeveloper">Moobees Developer</Link>
         <Link to="/markdown/rankingMethod">Ranking Method</Link>
         <Link to="/markdown/conditionsOfUse">Conditions of Use</Link>
         <Link to="/markdown/privacyPolicy">Privacy Policy</Link>

@@ -1,5 +1,14 @@
 const markdown = {
-  404: "# Sorry the page you requested doesn't exist or failed to load. Please try again!",
+  404: "404.md",
+  getMoobeesApp: "GetMoobeesApp.md",
+  help: "Help.md",
+  faqs: "FAQs.md",
+  moobeesDeveloper: "MoobeesDeveloper.md",
+  rankingMethod: "RankingMethod.md",
+  conditionsOfUse: "ConditionsOfUse.md",
+  privacyPolicy: "PrivacyPolicy.md",
+  feedback: "Feedback.md",
+  moobeesAPI: "MoobeesAPI.md",
 };
 
 export default markdown;
