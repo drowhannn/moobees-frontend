@@ -1,4 +1,4 @@
 .markdownContent {
-  width: 100vw;
   height: 100vh;
+  padding: min(20%, 200px, 2vw);
 }

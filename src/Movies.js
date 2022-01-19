@@ -21,6 +21,7 @@ const Movies = ({ isGenre }) => {
       return request;
     }
     fetchData();
+    window.scrollTo(0, 0);
   }, [genreORkeyword]);
 
   return (

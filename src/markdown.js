@@ -1,5 +1,4 @@
 const markdown = {
-  404: "404.md",
   getMoobeesApp: "GetMoobeesApp.md",
   help: "Help.md",
   faqs: "FAQs.md",
