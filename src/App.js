@@ -1,7 +1,6 @@
 import "./App.css";
 import Banner from "./Banner";
 import Nav from "./Nav";
-// import BestArtistsRow from "./BestArtistsRow";
 import MoviesRow from "./MoviesRow";
 import Footer from "./Footer";
 import requests from "./requests";
@@ -19,7 +18,6 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Banner fetchUrl={requests.fetchLatest} />
-            {/* <BestArtistsRow /> */}
             <MoviesRow title="Latest Movies" fetchUrl={requests.fetchLatest} />
             <MoviesRow title="Action Movies" fetchUrl={requests.fetchAction} />
             <MoviesRow

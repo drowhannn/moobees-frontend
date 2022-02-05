@@ -1,4 +1,8 @@
 .markdownContent {
   height: 100vh;
   padding: min(20%, 200px, 2vw);
+  width: max(70%, 300px, 70vw);
+}
+.markdownContent h4 {
+  margin-bottom: 10px;
 }
